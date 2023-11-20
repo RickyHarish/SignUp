@@ -12,9 +12,6 @@ const renderDesktopView = () => {
     return (
         <div className='desktop-bg-container'>
         <div className='popup-desktop-view'>
-        <div className='close-button-container'>
-                  <button className='close-button' > &times; </button>
-                </div>
             <div className='form-google-container-desktop-view'>
               <div className='form-container'>
                 <p className='signup-des'> 
@@ -95,9 +92,6 @@ const renderMobileView = () => {
         <div className='mobile-bg-container'>
         <div className='popup-mobile-view'>
             <div className='form-google-container-mobile-view'>
-                <div className='m-close-button-container'>
-                  <button className='m-close-button' > &times; </button>
-                </div>
                 <div className='mobile-form-container'>
             <h1 className='mobile-view-heading'>Create Account</h1>
                 <form onSubmit={onSignUp} className='m-sign-up-form'>
@@ -129,7 +123,7 @@ const renderMobileView = () => {
                     </div>
                         <button className='m-g-btn m-google-button'>
                                 <div className='icon-container'>
-                                <FcGoogle className='FcGoogle' />
+                                <FcGoogle className='m-FcGoogle' />
                                 <a href="https://www.writerbay.com/apply.html" className='google-anchor'> Continue with Google </a>
                                </div>
                         </button>         
